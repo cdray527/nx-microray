@@ -1,0 +1,9 @@
+[submodule "nx-microray-app"]
+	path = nx-microray-app
+	url = git@github.com:cdray527/nx-microray-app.git
+[submodule "nx-microray-api"]
+	path = nx-microray-api
+	url = git@github.com:cdray527/nx-microray-api.git
+[submodule "nx-microray-docker"]
+	path = nx-microray-docker
+	url = git@github.com:cdray527/nx-microray-docker.git
