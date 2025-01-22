@@ -2,33 +2,57 @@
 
 ## Project Overview
 
-This project meant for proof of concepts to a full stack web app with microservices architecture which consists of
+![project overview](https://lucid.app/publicSegments/view/406b7f67-8c0c-474c-8c37-2ad5bc1f4976/image.jpeg)
 
-- **Frontend**: Nx Monorepo with Next.js, Storybook, and Tailwind CSS
-- **Backend**: GraphQL server in Golang
+This proof-of-concept project designed to demonstrate the potential of a scalable web application in microservices architecture, each services are containerized using Docker. The key services include:
+
+- **Frontend**: Microfrontend approach using Nx Workspace and Module Federation
+- **Backend**: GraphQL server built with Golang
 - **Database**: MongoDB
-- **Web Server**: Nginx for reverse proxy
+- **API Gateway**: Nginx
 
-## Boon of Microservices
+## Benefits of Microservices
 
-- Scalable
-- Easy to manage different services
+- **Scalable**: Scale individual services independently or add new service based on demand.
+- **Flexible**: Each service can be develop using own choices of languages or framework that best suited for.
+- **Faster development**: Teams can work on different services simultaneously or independently.
+- **Maintainable**: Smaller, focused codebases are easier to manage and debug.
+- **Reusable**: Share services across multiple projects to reduce redundancy.
+- **Isolation**: Faults in one service don’t impact the entire system, making failures easier to track and handle.
+- **Continuous delivery**: Independent pipelines enable faster updates.
 
 ## Setup & Installation
 
 ### Prerequisites
 
-Docker
+Before starting, ensure the following are installed:
+
+- Docker CLI
+- Clone the repository along with all its submodules
 
 ### Steps to Init
 
-1. **Build the application**:
-   `nx-microray build`
+Import initial data\*\*:
+`nx-microray import`
 
-2. **Import initial data**:
-   `nx-microray import`
+### Development
 
-### Start All Services
+Start All Services
 
-To start all services
-`nx-microray up`
+`nx-microray dev up`
+
+Stop All Services
+
+`nx-microray dev down`
+
+### Production
+
+Build the application
+`nx-microray prod build`
+
+Start All Services
+
+`nx-microray prod up`
+
+Stop All Services
+`nx-microray prod down`
