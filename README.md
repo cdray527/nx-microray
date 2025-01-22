@@ -1,13 +1,13 @@
 ## Project Overview ( WIP )
 
-![project overview](https://lucid.app/publicSegments/view/406b7f67-8c0c-474c-8c37-2ad5bc1f4976/image.jpeg)
+![project overview](https://lucid.app/publicSegments/view/8204cb16-2f13-4480-86b7-31d71ac9009c/image.jpeg)
 
 This proof-of-concept project designed to demonstrate the potential of a scalable web application in microservices architecture, each services are containerized using Docker. The key services include:
 
 - **Frontend**: Microfrontend approach using Nx Workspace and Module Federation
 - **Backend**: GraphQL server built with Golang
 - **Database**: MongoDB
-- **API Gateway**: Nginx
+- **Reverse proxy**: Nginx
 
 ## Benefits of Microservices
 
