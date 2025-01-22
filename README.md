@@ -32,23 +32,13 @@ This proof-of-concept project designed to demonstrate the potential of a scalabl
 A shell script was provided to run all packaged docker-compose commands
 
 ### Development
-Start All Services
+Start All Services : `nx-microray dev up`
 
-`nx-microray dev up`
-
-Stop All Services
-
-`nx-microray dev down`
+Stop All Services :`nx-microray dev down`
 
 ### Production
-Build the application
+Build the application: `nx-microray prod build`
 
-`nx-microray prod build`
+Start All Services: `nx-microray prod up`
 
-Start All Services
-
-`nx-microray prod up`
-
-Stop All Services
-
-`nx-microray prod down`
+Stop All Services: `nx-microray prod down`
