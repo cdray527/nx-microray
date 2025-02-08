@@ -23,7 +23,8 @@ This proof-of-concept project designed to demonstrate the potential of a scalabl
 
 1. Install Docker on your machine.
 
-2. Clone all submodules 
+2. Clone all submodules
+
 git submodule update --init --recursive
 
 ## Command 
