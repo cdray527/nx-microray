@@ -25,7 +25,7 @@ This proof-of-concept project designed to demonstrate the potential of a scalabl
 
 2. Clone all submodules
 
-git submodule update --init --recursive
+`git submodule update --init --recursive`
 
 ## Command 
 A shell script was provided to run all packaged docker-compose commands
