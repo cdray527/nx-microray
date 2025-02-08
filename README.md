@@ -24,21 +24,21 @@ This proof-of-concept project designed to demonstrate the potential of a scalabl
 1. Install Docker on your machine.
 
 2. Clone all submodules 
-[Backend](doc:https://github.com/cdray527/nx-microray-api/tree/41725b59b1761dd8de3b56ee23e460954310660a)
-[Frontend](doc:https://github.com/cdray527/nx-microray-app/tree/736ccc1c014ed3625678b97452b68ba7bda9df04)
-[Config](doc:https://github.com/cdray527/nx-microray-docker/tree/60d1e2a8ac9a6713e5496c76c813d73fef2bf1d8)
+git submodule update --init --recursive
 
 ## Command 
 A shell script was provided to run all packaged docker-compose commands
 
 ### Development
-Start All Services : `nx-microray dev up`
+Init All Services : `./nx-microray.sh dev build`
 
-Stop All Services :`nx-microray dev down`
+Start All Services : `./nx-microray.sh dev up`
+
+Stop All Services :`./nx-microray.sh dev down`
 
 ### Production
-Build the application: `nx-microray prod build`
+Build the application: `./nx-microray.sh prod build`
 
-Start All Services: `nx-microray prod up`
+Start All Services: `./nx-microray.sh prod up`
 
-Stop All Services: `nx-microray prod down`
+Stop All Services: `./nx-microray.sh prod down`
