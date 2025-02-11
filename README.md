@@ -9,16 +9,6 @@ This proof-of-concept project designed to demonstrate the potential of a scalabl
 - **Database**: MongoDB
 - **Reverse proxy**: Nginx
 
-## Benefits of Microservices
-
-- **Scalable**: Scale individual services independently or add new service based on demand.
-- **Flexible**: Each service can be develop using own choices of languages or framework that best suited for.
-- **Faster development**: Teams can work on different services simultaneously or independently.
-- **Maintainable**: Smaller, focused codebases are easier to manage and debug.
-- **Reusable**: Share services across multiple projects to reduce redundancy.
-- **Isolation**: Faults in one service don’t impact the entire system, making failures easier to track and handle.
-- **Continuous delivery**: Independent pipelines enable faster updates.
-
 ## Setup 
 
 1. Install Docker on your machine.
