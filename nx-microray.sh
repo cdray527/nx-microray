@@ -76,7 +76,7 @@ case "$1" in
     cleanup)
         echo "Cleaning up dangling volumes..."
         VOLUMES=$(docker volume ls -q --filter dangling=true)
-        VOLUMES=$(echo "$VOLUMES" | grep -v 'nx-microray-mongodb-data')
+        VOLUMES=$(echo "$VOLUMES" | grep -Ev 'nx-microray-mongodb-data|nx-microray-app-cache|nx-microray-app-node-modules')
         if [ -n "$VOLUMES" ]; then
             docker volume rm $VOLUMES
             echo "Removed dangling volumes."
